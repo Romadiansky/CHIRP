@@ -21,15 +21,15 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.container {
+#body-main .component {
+  box-sizing: content-box;
+  border-color: red;
   width: 450px;
-  height: 1000px;
-  margin: auto;
   background-color: white;
-  padding: 90px 0 100px 0;
-}
-.container p {
-  padding: 80px 10px 100px 10px;
+  padding-left: 230px;
+  padding-right: 230px;
+  display: block;
+
 }
 
 

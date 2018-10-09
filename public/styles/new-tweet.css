@@ -1,0 +1,24 @@
+.new-tweet {
+  width: 350px;
+  height: 300px;
+  background-color: lightgrey;
+  color: white;
+  text-align: center;
+  padding: 5px 20px 20px 20px;
+  margin: 0 50px 0 50px;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid grey;
+}
+
+.new-tweet h2 {
+  font-size: 100%;
+  border-bottom: 1px solid navy;
+  padding-bottom: 2px;
+  text-align: left;
+}
+
+.new-tweet form {
+  margin: 40px 40px 40px 40px;
+  padding: 2px 2px 2px 2px;
+  object-position: center
+}
