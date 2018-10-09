@@ -1,24 +1,40 @@
 .new-tweet {
-  width: 350px;
-  height: 300px;
-  background-color: lightgrey;
-  color: white;
+  height: relative;
+  background-color: #eee;
+  color: #244751;
   text-align: center;
   padding: 5px 20px 20px 20px;
-  margin: 0 50px 0 50px;
+  margin: 0 2em 0 2em;
+  float: center;
   border-radius: 5px 5px 5px 5px;
-  border: 1px solid grey;
+  border: 1px solid #c2c0c0;
+  overflow: auto;
+
 }
 
 .new-tweet h2 {
-  font-size: 100%;
-  border-bottom: 1px solid navy;
-  padding-bottom: 2px;
+  font-size: 150%;
+  border-bottom: 1px solid #244751;
+  padding-bottom: 1px;
   text-align: left;
+  margin-block-end: 0.6em;
 }
 
 .new-tweet form {
-  margin: 40px 40px 40px 40px;
-  padding: 2px 2px 2px 2px;
   object-position: center
+}
+
+.new-tweet textarea {
+  width: 100%;
+  padding: 3px 5px 5px 5px;
+  font-size: 85%;
+}
+
+.submit {
+  float: left;
+}
+
+.counter {
+  float: right;
+  font-size: 85%;
 }
