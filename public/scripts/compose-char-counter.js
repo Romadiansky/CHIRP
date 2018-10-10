@@ -4,7 +4,11 @@ $(document).ready(function() {
 
 function setCharCounter() {
   $("#tweedle").on('keyup', function(){
-    $(this).parent().children(".counter").html(140 - $(this).val().length);
-    // console.log(140 - $(this).val().length);
+    let counterSpan = $(this).parent().children(".counter");
+    let charsLeft = 140 - $(this).val().length;
+    counterSpan.html(charsLeft);
+    if (charsLeft < 0) {
+      counterSpan.css("color", "red");
+    }
   });
 }
