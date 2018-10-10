@@ -3,7 +3,7 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-
+$(document).ready(function() {
 
  var data = [
   {
@@ -52,8 +52,11 @@
   }
 ]
 
+$('#tweetForm').submit(function (event) {
+  event.preventDefault();
+  console.log( $(this).serialize());
+});
 
-// var $tweet = createTweetElement(tweetData)
 
 function createTweetElement(tweetData) {
 
@@ -74,8 +77,10 @@ function createTweetElement(tweetData) {
 function renderTweets(tweets) {
   tweets.forEach(tweetData => {
     let $tweet = createTweetElement(tweetData);
-    $('#restTweets').append($tweet)
+    $('#restTweets').append($tweet);
   });
 }
 
 renderTweets(data);
+
+});
