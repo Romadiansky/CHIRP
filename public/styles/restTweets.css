@@ -1,3 +1,13 @@
+.restTweet {
+  opacity: .5;
+  transition: 0.5s;
+}
+
+.restTweet:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
 .avatar {
   float: left;
   height: 50px;
@@ -20,6 +30,7 @@
 
 .restTweet header {
   background-color: #ddf;
+  border-bottom: #c2c0c0;
   margin: 0 0 0 0;
   width: 100%;
   height: 100%;
