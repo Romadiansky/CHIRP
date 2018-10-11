@@ -16,11 +16,16 @@ function loadTweets() {
 $('#tweetForm').submit(function (event) {
   event.preventDefault();
   let data = $(this).serialize();
+  if (($("#tweedle").val().length == 0) || ($("#tweedle").val() == "")) {
+    alert("Oops. Try writing something before submitting");
+  } else if ($("#tweedle").val().length > 140) {
+    alert ("No-can-do! 140 or less or it's not a tweedle!");
+  } else {
   $.ajax({
     method: "POST",
     url: "/tweets",
     data
-  })
+  })}
     // .done(function(msg) {
     // });
 });
