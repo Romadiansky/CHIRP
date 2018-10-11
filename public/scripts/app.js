@@ -15,8 +15,10 @@ function loadTweets() {
 //new tweet section is hidden; on click of "compose" it appears
 $('.new-tweet').hide();
 
+//toggle variable
 let newTweetNow = false;
 
+//toggle event listener for the new-tweet section
 $('#compose').on('click', function (event) {
   if (newTweetNow == false) {
     $('.new-tweet').slideDown();
@@ -28,16 +30,27 @@ $('#compose').on('click', function (event) {
   }
 })
 
+//error hide function
+let displayingErr = false;
 
+//error show function
+function displayError (msg) {
+  $("#errors").text(msg).css("color", "red");
+  displayingErr = true;
+  $("#tweedle").on('focus', function (event) {
+    $("#errors").empty();
+  })
+}
 
 //tweet submit form
 $('#tweetForm').submit(function (event) {
   event.preventDefault();
   let data = $(this).serialize();
-  if (($("#tweedle").val().length == 0) || ($("#tweedle").val() == "")) {
-    alert("Oops. Try writing something");
+  if ($("#tweedle").val().length == 0) {
+    displayError("Oops. Try writing something")
+    .then(removeErr());
   } else if ($("#tweedle").val().length > 140) {
-    alert ("Stop. No one has time for that. 140 characters or less!");
+    displayError("Stop. No one has time for that. 140 characters or less!");
   } else {
     $.ajax({
       method: "POST",
