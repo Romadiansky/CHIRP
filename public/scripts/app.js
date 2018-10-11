@@ -8,9 +8,21 @@ $(document).ready(function() {
 //gets tweets that are preloaded
 function loadTweets() {
   $.get("/tweets", function (data) {
-    renderTweets(data);
+    renderTweets(sortTweets(data));
   })
 }
+
+
+// // function loadLatest() {
+// //   $.get("/tweets", function () {
+
+// //   })
+// }
+// // function loadTweet() {
+// //   $.get($("/tweets" #tweedle").val(), function (nowTweet) {
+// //     renderTweet(nowTweet);
+// //   });
+// // }
 
 //tweet submit form
 $('#tweetForm').submit(function (event) {
@@ -21,11 +33,13 @@ $('#tweetForm').submit(function (event) {
   } else if ($("#tweedle").val().length > 140) {
     alert ("No-can-do! 140 or less or it's not a tweedle!");
   } else {
-  $.ajax({
-    method: "POST",
-    url: "/tweets",
-    data
-  })}
+    $.ajax({
+      method: "POST",
+      url: "/tweets",
+      data
+    })
+    loadTweets();
+  }
     // .done(function(msg) {
     // });
 });
@@ -46,14 +60,30 @@ function createTweetElement(tweetData) {
   </article>`;
 }
 
+let mostRecentTweet = 0;
 
 function renderTweets(tweets) {
   tweets.forEach(tweetData => {
-    let $tweet = createTweetElement(tweetData);
-    $('#restTweets').append($tweet);
+    if (tweetData.created_at > mostRecentTweet) {
+      let $tweet = createTweetElement(tweetData);
+      $('#restTweets').prepend($tweet);
+      mostRecentTweet = tweetData.created_at;
+    }
   });
 }
 
 loadTweets();
+
+
+
+function sortTweets(arrTweets) {
+  arrTweets.sort(function (a, b) {
+    return a.created_at - b.created_at;
+  })
+  return arrTweets;
+}
+
+
+
 
 });
