@@ -12,6 +12,15 @@ function loadTweets() {
   })
 }
 
+//new tweet section is hidden; on click of "compose" it appears
+$('.new-tweet').hide();
+
+$('#compose').on('click', function (event) {
+  $('.new-tweet').slideDown();
+  $('#tweedle').focus();
+})
+
+
 
 //tweet submit form
 $('#tweetForm').submit(function (event) {
@@ -20,7 +29,7 @@ $('#tweetForm').submit(function (event) {
   if (($("#tweedle").val().length == 0) || ($("#tweedle").val() == "")) {
     alert("Oops. Try writing something");
   } else if ($("#tweedle").val().length > 140) {
-    alert ("No-can-do! 140 or less or it's not a tweedle!");
+    alert ("Stop. No one has time for that. 140 characters or less!");
   } else {
     $.ajax({
       method: "POST",
