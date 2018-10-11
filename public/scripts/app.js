@@ -38,28 +38,34 @@ $('#tweetForm').submit(function (event) {
       url: "/tweets",
       data
     })
-    loadTweets();
+    .then(function() {loadTweets(), $("#tweedle").val('')})
   }
-    // .done(function(msg) {
-    // });
 });
 
+function escape(str) {
+  var div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
+
+//parses tweedle into HTML code
 function createTweetElement(tweetData) {
 
   return `<article class="restTweet">
     <header>
-      <img class="avatar" src ="${tweetData.user.avatars.large}"/>
-      <h2>${tweetData.user.name}</h2>
-      <span class="handle">${tweetData.user.handle}</span>
+      <img class="avatar" src ="${escape(tweetData.user.avatars.large)}"/>
+      <h2>${escape(tweetData.user.name)}</h2>
+      <span class="handle">${escape(tweetData.user.handle)}</span>
     </header>
-    <section class="tweetText">${tweetData.content.text}</section>
+    <section class="tweetText">${escape(tweetData.content.text)}</section>
     <footer>
-      <span class="days">${tweetData.created_at}</span>
+      <span class="days">${escape(tweetData.created_at)}</span>
     </footer>
   </article>`;
 }
 
+//renders tweets, in order of most recent to oldest
 let mostRecentTweet = 0;
 
 function renderTweets(tweets) {
@@ -75,15 +81,13 @@ function renderTweets(tweets) {
 loadTweets();
 
 
-
+//sorts tweets in order of when they were created (oldest appear first)
 function sortTweets(arrTweets) {
   arrTweets.sort(function (a, b) {
     return a.created_at - b.created_at;
   })
   return arrTweets;
 }
-
-
 
 
 });
