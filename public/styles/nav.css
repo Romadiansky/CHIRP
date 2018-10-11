@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 nav {
   position: fixed;
   z-index: 1;
@@ -19,5 +26,29 @@ nav {
 
 #nav-bar .header {
   font-size: 200%;
+}
 
+.compose {
+  float: right;
+  line-height: 50px;
+  border: 1px solid #244751;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 0 15px 0;
+  padding: 0 5px 0 5px;
+  background-color: #ddfffd;
+  color: #244751;
+}
+
+.compose img {
+  transform: translateY(7px);
+}
+
+.compose {
+  opacity: .5;
+  transition: 0.5s;
+}
+
+.compose:hover {
+  opacity: 1;
+  transition: 0.5s;
 }

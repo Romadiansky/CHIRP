@@ -13,23 +13,12 @@ function loadTweets() {
 }
 
 
-// // function loadLatest() {
-// //   $.get("/tweets", function () {
-
-// //   })
-// }
-// // function loadTweet() {
-// //   $.get($("/tweets" #tweedle").val(), function (nowTweet) {
-// //     renderTweet(nowTweet);
-// //   });
-// // }
-
 //tweet submit form
 $('#tweetForm').submit(function (event) {
   event.preventDefault();
   let data = $(this).serialize();
   if (($("#tweedle").val().length == 0) || ($("#tweedle").val() == "")) {
-    alert("Oops. Try writing something before submitting");
+    alert("Oops. Try writing something");
   } else if ($("#tweedle").val().length > 140) {
     alert ("No-can-do! 140 or less or it's not a tweedle!");
   } else {

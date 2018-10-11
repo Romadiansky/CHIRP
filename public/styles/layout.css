@@ -23,7 +23,7 @@ body {
 
 .container {
   width: 450px;
-  height: 1000px;
+  height: 100%;
   margin: auto;
   background-color: white;
   padding: 90px 0 100px 0;
