@@ -15,9 +15,17 @@ function loadTweets() {
 //new tweet section is hidden; on click of "compose" it appears
 $('.new-tweet').hide();
 
+let newTweetNow = false;
+
 $('#compose').on('click', function (event) {
-  $('.new-tweet').slideDown();
-  $('#tweedle').focus();
+  if (newTweetNow == false) {
+    $('.new-tweet').slideDown();
+    $('#tweedle').focus();
+    newTweetNow = true;
+  } else {
+    $('.new-tweet').slideUp();
+    newTweetNow = false;
+  }
 })
 
 
