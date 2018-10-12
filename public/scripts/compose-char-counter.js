@@ -9,6 +9,8 @@ function setCharCounter() {
     counterSpan.html(charsLeft);
     if (charsLeft < 0) {
       counterSpan.css("color", "red");
+    } else {
+      counterSpan.css("color", "black");
     }
   });
 }
