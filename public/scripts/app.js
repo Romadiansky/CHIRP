@@ -38,7 +38,7 @@ $(document).ready(function() {
         url: "/tweets",
         data
       })
-      .then(function() {loadTweets(), $("#tweedle").val('')})
+      .then(function() {loadTweets(), $("#tweedle").val(''); changeCharCounter($("#tweedle")) });
     }
   });
 

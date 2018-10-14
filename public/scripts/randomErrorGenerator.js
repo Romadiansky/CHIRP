@@ -1,9 +1,9 @@
 const errZero = [
   "Oops. You probably meant to say something.",
   "Surely, you've got a thought in there somewhere.",
-  "To chirp, first type out a chirp, then hit 'chirp.'",
+  "To chirp, first type a chirp, then hit 'chirp.'",
   "Try again, but say something this time.",
-  "Someone is trigger-happy! At least you've come to the right place.",
+  "Someone is trigger-happy! Try again, but with an actual chirp.",
   "You forgot to say a thing. Say a thing."
   ]
 
@@ -15,7 +15,7 @@ const errTooMuch = [
   "Try this again, but with more focus: 140 chars or less.",
   "100% of successful chirps get to the point in 140 chars or less. We only host successful chirps.",
   "Whoa! That's, like, way too many characters.",
-  "Please just say the important bit and leave the rest for a less discriminating audience."
+  "Please just say the important bit and leave the rest to a less discriminating audience."
 ]
 
 let randErr = function(arr) {
@@ -25,6 +25,3 @@ let randErr = function(arr) {
   }
   return arr[x];
 }
-
-
-
