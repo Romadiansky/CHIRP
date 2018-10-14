@@ -7,7 +7,7 @@ Chirp:copyright: is a simple, single-page Twitter clone, but with a twist of hon
 
 Do you know something that other people should change about themselves that would make the world better? What about that thing that's evading policy makers that you just know will improve the economy? Chirp attracts the people that have answers to questions like the ones above and invites them to share them.
 
-To reduce the barrier to entry (and appease *those* conspiracy theorists concerned with data breaches), we've elected to do away with registration. All you need to do to take flight in this platform is declare that profound idea as soon as it pops into your head. Then, another. And again. There is no such thing as a bad idea so long as it comes from you. Others may fall prey to the 'bad-idea' phenomenon, but rest assured -- in  we've built in "downvotes", "stop", and "cold!" emojicons, which you can use to let them know how you feel. Alternatively, you can always chirp about it.
+To reduce the barrier to entry (and appease *those* conspiracy theorists concerned with data breaches), we've elected to do away with registration. All you need to do to take flight in this platform is declare that profound idea as soon as it pops into your head. Then, another. And again. There is no such thing as a bad idea so long as it comes from you. Others may fall prey to the 'bad-idea' phenomenon, but rest assured; we've built in icons that represent a comprehensive range of emotions, which you can use to tell them how you feel. Alternatively, you can always chirp about it.
 
 ## All you need to know:
 
@@ -15,7 +15,7 @@ To reduce the barrier to entry (and appease *those* conspiracy theorists concern
 !["browse chirps of others"](https://github.com/Romadiansky/tweeter/blob/master/docs/on-entry.png?raw=true)Browse the chirps of others and keep your critical thinking sharp!
 
 2. step 2: declare & craft your chirp
-![declare, prepare and type away!](https://github.com/Romadiansky/tweeter/blob/master/docs/declare-express-craft.png?raw=true)Is someone wrong on the internet? Tell them now. You can express yourself through our selection of icons that depict a comprehensive range of emotions, or you can hit the 'Declare' button, and 'Craft Your Chirp' in the animated textbox with the afore mentioned heading.
+![declare, prepare and type away!](https://github.com/Romadiansky/tweeter/blob/master/docs/declare-express-craft.png?raw=true)Is someone wrong on the internet? Tell them now. You can express yourself through our selection of icons that depict appropriate emotions for the occasion, or you can click the 'Declare' button, and 'Craft Your Chirp' in the textbox with the afore mentioned heading that will animate down.
 
 3. step 3: craft carefully
 !["Whatever you do, don't make mistakes!"](https://github.com/Romadiansky/tweeter/blob/master/docs/respond-carefully.png?raw=true)Craft your chirp with passion and candor and sincerity. **But, don't do it wrong**. If you say too much or not enough, we've prepared *a number* of creative ways of letting you know about it, every time. At chirp, we take 'wrongness' very seriously.
