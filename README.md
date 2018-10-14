@@ -11,17 +11,17 @@ To reduce the barrier to entry (and appease *those* conspiracy theorists concern
 
 ## All you need to know:
 
-1. step 1: finding inspiration: *browse chirps*
-["Browse the chirps of others and keep your critical thinking sharp!"](https://github.com/Romadiansky/tweeter/blob/master/docs/on-entry.png?raw=true)
+1. step 1: find inspiration:
+!["browse chirps of others"](https://github.com/Romadiansky/tweeter/blob/master/docs/on-entry.png?raw=true)Browse the chirps of others and keep your critical thinking sharp!
 
 2. step 2: declare: *is someone wrong on the internet?! tell them!*
-["Is someone wrong on the internet? Tell them now. You can express yourself through our selection of icons that depict a comprehensive range of emotions, or you can hit the 'Declare' button, and in the textbox that reads, 'Craft Your Chirp', let it all hang out"](https://github.com/Romadiansky/tweeter/blob/master/docs/feeling-inspired.png?raw=true)
+!["Is someone wrong on the internet? Tell them now. You can express yourself through our selection of icons that depict a comprehensive range of emotions, or you can hit the 'Declare' button, and in the textbox that reads, 'Craft Your Chirp', let it all hang out"](https://github.com/Romadiansky/tweeter/blob/master/docs/feeling-inspired.png?raw=true)
 
 3. step 3: craft carefully; *we take 'wrongness' very seriously.*
-["Craft your chirp with passion and candor and sincerity. **But, don't do it wrong**. If you say too much or not enough, we've prepared a number of creative ways of letting you know about it, everytime you're wrong. We take wrongness seriously at chirp:copywrite:"](https://github.com/Romadiansky/tweeter/blob/master/docs/respond-carefully.png?raw=true)
+!["Craft your chirp with passion and candor and sincerity. **But, don't do it wrong**. If you say too much or not enough, we've prepared a number of creative ways of letting you know about it, everytime you're wrong. We take wrongness seriously at chirp:copywrite:"](https://github.com/Romadiansky/tweeter/blob/master/docs/respond-carefully.png?raw=true)
 
 4. step 4: submit: *we also take 'rightness' seriously*
-["We also take 'rightness' seriously. And when you get it right enough, we want to make sure your message is heard loud and clear. This is why we imbue each and every one of your chirps with the passion with which we know you intended it. You're welcome."](https://github.com/Romadiansky/tweeter/blob/master/docs/submit-and-enjoy.png?raw=true)
+!["We also take 'rightness' seriously. And when you get it right enough, we want to make sure your message is heard loud and clear. This is why we imbue each and every one of your chirps with the passion with which we know you intended it. You're welcome."](https://github.com/Romadiansky/tweeter/blob/master/docs/submit-and-enjoy.png?raw=true)
 
 ## Getting Started:
 
