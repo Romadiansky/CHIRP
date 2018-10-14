@@ -2,6 +2,7 @@ $(document).ready(function() {
   setCharCounter();
 });
 
+//counts the remaining characters on 'keyup'
 function setCharCounter() {
   $("#tweedle").on('keyup', function(){
     let counterSpan = $(this).parent().children(".counter");
