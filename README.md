@@ -11,21 +11,17 @@ To reduce the barrier to entry (and appease *those* conspiracy theorists concern
 
 ## All you need to know:
 
-1. step 1: find inspiration:
-Browse the chirps of others and keep your critical thinking sharp!
-!["browse chirps of others"](https://github.com/Romadiansky/tweeter/blob/master/docs/on-entry.png?raw=true)
+1. step 1: find inspiration
+!["browse chirps of others"](https://github.com/Romadiansky/tweeter/blob/master/docs/on-entry.png?raw=true)Browse the chirps of others and keep your critical thinking sharp!
 
-2. step 2: declare & craft your chirp:
-Is someone wrong on the internet? Tell them now. You can express yourself through our selection of icons that depict a comprehensive range of emotions, or you can hit the 'Declare' button, and 'Craft Your Chirp' in the textbox with the aforementioned heading.
-![declare, prepare and type away!](https://github.com/Romadiansky/tweeter/blob/master/docs/feeling-inspired.png?raw=true)
+2. step 2: declare & craft your chirp
+![declare, prepare and type away!](https://github.com/Romadiansky/tweeter/blob/master/docs/feeling-inspired.png?raw=true)Is someone wrong on the internet? Tell them now. You can express yourself through our selection of icons that depict a comprehensive range of emotions, or you can hit the 'Declare' button, and 'Craft Your Chirp' in the textbox with the aforementioned heading.
 
-3. step 3: craft carefully;
-Craft your chirp with passion and candor and sincerity. **But, don't do it wrong**. If you say too much or not enough, we've prepared *a number* of creative ways of letting you know about it, every time. We take wrongness seriously at chirp:copywrite:
-!["Whatever you do, don't make mistakes!"](https://github.com/Romadiansky/tweeter/blob/master/docs/respond-carefully.png?raw=true)
+3. step 3: craft carefully
+!["Whatever you do, don't make mistakes!"](https://github.com/Romadiansky/tweeter/blob/master/docs/respond-carefully.png?raw=true)Craft your chirp with passion and candor and sincerity. **But, don't do it wrong**. If you say too much or not enough, we've prepared *a number* of creative ways of letting you know about it, every time. We take wrongness seriously at chirp.
 
-4. step 4: submit:
-We also take 'rightness' seriously. This is why when you get it right (or right enough), we imbue each and every one of your chirps with some of the passion with which it was intended. You're welcome.
-!["when you're right, we make sure you are heard"](https://github.com/Romadiansky/tweeter/blob/master/docs/submit-and-enjoy.png?raw=true)
+4. step 4: submit & enjoy that feeling of superiority
+!["when you're right, we make sure you are heard"](https://github.com/Romadiansky/tweeter/blob/master/docs/submit-and-enjoy.png?raw=true)We also take 'rightness' seriously. This is why when you get it right (or right enough), we imbue each and every one of your chirps with some of the passion with which it was intended. You're welcome.
 
 ## Getting Started:
 
