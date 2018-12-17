@@ -97,4 +97,30 @@
   float: left;
 }
 
+.angrycons {
+  position: relative;
+  padding-left: 50px;
+}
 
+.iconbox {
+  /*position: relative;*/
+}
+
+.iconcaption {
+   display: none;
+   font-size: 85%;
+   position: absolute;
+   top: -30px;
+   right: 0px;
+}
+.iconbox:hover .iconcaption {
+   display: block;
+}
+
+.iconcounter {
+  color: #a00000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 60%;
+}
