@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-  //new tweet section is hidden; on click of "compose" it appears
+  //new tweet section is hidden; on "declare" click it appears
   $('.new-tweet').hide();
 
   //toggle variable
   let newTweetNow = false;
 
-  //toggle event listener for the new-tweet section
+  //toggle new tween section upon click
   $('#compose').on('click', function (event) {
     if (newTweetNow == false) {
       $('.new-tweet').slideDown();
@@ -76,9 +76,19 @@ function createTweetElement(tweetData) {
     <footer>
       <span class="days">${escape(jQuery.timeago(tweetData.created_at))}</span>
       <span class="angrycons">
-        <ion-icon id="icon1" name="hand"></ion-icon>
-        <ion-icon id="icon2" name="thumbs-down"></ion-icon>
-        <ion-icon id="icon3" name="snow"></ion-icon>
+        <span class="iconbox">
+          <span class="iconcaption">"oh, stop!"</span>
+          <ion-icon id="icon1" name="hand"></ion-icon>
+          <span class="iconcounter">0</span>
+        </span>
+        <span class="iconbox">
+          <span class="iconcaption">"ew, just ew."</span>
+          <ion-icon id="icon2" name="thumbs-down"></ion-icon>
+        </span>
+        <span class="iconbox">
+          <span class="iconcaption">"dang that's cold"</span>
+          <ion-icon id="icon3" name="snow"></ion-icon>
+        </span>
       </span>
     </footer>
   </article>`;
