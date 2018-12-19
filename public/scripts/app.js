@@ -63,38 +63,38 @@ function escape(str) {
    return div.innerHTML;
 }
 
- //parses tweedle into HTML code
+// parses tweedle into HTML code
+// only escape values submitted by user
 function createTweetElement(tweetData) {
 
   return `<article class="restTweet">
     <header>
-      <img class="avatar" src ="${escape(tweetData.user.avatars.large)}"/>
+      <img class="avatar" src ="${tweetData.user.avatars.large}"/>
       <h2>${escape(tweetData.user.name)}</h2>
       <span class="handle">${escape(tweetData.user.handle)}</span>
     </header>
     <section class="tweetText">${escape(tweetData.content.text)}</section>
     <footer>
-      <span class="days">${escape(jQuery.timeago(tweetData.created_at))}</span>
+      <span class="days">${jQuery.timeago(tweetData.created_at)}</span>
       <span class="angrycons">
         <span class="iconbox">
-          <span class="iconcaption">"oh, stop!"</span>
-          <ion-icon id="icon1" name="hand"></ion-icon>
-          <span class="iconcounter">0</span>
+          <ion-icon class="icon" data-icon="icon1" data-id="${tweetData._id}" name="hand" title="Oh, stop."></ion-icon>
+          <span class="iconcounter">${tweetData.icon1 || 0}</span>
         </span>
         <span class="iconbox">
-          <span class="iconcaption">"ew, just ew."</span>
-          <ion-icon id="icon2" name="thumbs-down"></ion-icon>
+          <ion-icon class="icon" data-icon="icon2" data-id="${tweetData._id}" name="thumbs-down" title="Thumbs down."></ion-icon>
+          <span class="iconcounter">${tweetData.icon2 || 0}</span>
         </span>
         <span class="iconbox">
-          <span class="iconcaption">"dang that's cold"</span>
-          <ion-icon id="icon3" name="snow"></ion-icon>
+          <ion-icon class="icon" data-icon="icon3" data-id="${tweetData._id}" name="snow" title="That's cold."></ion-icon>
+          <span class="iconcounter">${tweetData.icon3 || 0}</span>
         </span>
       </span>
     </footer>
   </article>`;
 }
 
- //sorts tweets in order of when they were created (oldest appear first)
+ // sorts tweets in order of when they were created (oldest appear first)
  function sortTweets(arrTweets) {
    arrTweets.sort(function (a, b) {
      return a.created_at - b.created_at;
@@ -102,14 +102,14 @@ function createTweetElement(tweetData) {
    return arrTweets;
  }
 
-//gets tweets that are preloaded
+// gets tweets that are preloaded
 function loadTweets() {
   $.get("/tweets", function (data) {
     renderTweets(sortTweets(data));
   })
 }
 
-//renders tweets, in order of most recent to oldest
+// renders tweets, in order of most recent to oldest
 let mostRecentTweet = 0;
 
 function renderTweets(tweets) {
@@ -118,6 +118,16 @@ function renderTweets(tweets) {
       let $tweet = createTweetElement(tweetData);
       $('#restTweets').prepend($tweet);
       mostRecentTweet = tweetData.created_at;
+      $('.angrycons').first().find('.icon').click(voteHandler);
     }
+  });
+}
+
+function voteHandler(icon) {
+  let button = $(icon.target);
+  let bId = button.data('id');
+  let bIcon = button.data('icon');
+  $.post("/tweets/vote", {id: bId, icon: bIcon}, function(data) {
+    button.next().text(data.value[bIcon]);
   });
 }
