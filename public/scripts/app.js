@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-  //new tweet section is hidden; on "declare" click it appears
+  // new tweet section is hidden; on "declare" click it appears
   $('.new-tweet').hide();
 
   //toggle variable
   let newTweetNow = false;
 
-  //toggle new tween section upon click
+  // toggle new tween section upon click
   $('#compose').on('click', function (event) {
     if (newTweetNow == false) {
       $('.new-tweet').slideDown();
@@ -46,7 +46,7 @@ $(document).ready(function() {
 
 });
 
-//error show function
+// error show function
 function displayError (type) {
   let displayingErr = false;
   $("#errors").text(randErr(type)).css("color", "#f70d0d");
@@ -56,7 +56,7 @@ function displayError (type) {
   })
 }
 
-//takes any input and returns a string
+// takes any input and returns a string
 function escape(str) {
    var div = document.createElement('div');
    div.appendChild(document.createTextNode(str));
