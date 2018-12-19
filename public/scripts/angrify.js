@@ -1,4 +1,4 @@
-//takes textarea text and makes it sound angry
+// takes textarea text and makes it sound angry
 function angrify(data) {
   data = data.toUpperCase();
   data += generateRandomProfanity();
@@ -6,7 +6,7 @@ function angrify(data) {
   // return data.toUpperCase() += generateRandomProfanity()
 }
 
-//generates random string of profanity, followed by exclamation marks
+// generates random string of profanity, followed by exclamation marks
 function generateRandomProfanity() {
   let profanity = " ";
   const characters = "!@#$%&*#$%#!@!";
