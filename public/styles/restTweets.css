@@ -65,29 +65,11 @@
   padding: 10px 5px 1px 10px;
 }
 
-.restTweet #icon1 {
+.restTweet .icon {
   color: #000;
 }
 
-.restTweet #icon1:hover {
-  color: #a00000;
-  transition: 0.2s;
-}
-
-.restTweet #icon2 {
-  color: #000;
-}
-
-.restTweet #icon2:hover {
-  color: #a00000;
-  transition: 0.2s;
-}
-
-.restTweet #icon3 {
-  color: #000;
-}
-
-.restTweet #icon3:hover {
+.restTweet .icon:hover {
   color: #a00000;
   transition: 0.2s;
 }
@@ -97,24 +79,8 @@
   float: left;
 }
 
-.angrycons {
-  position: relative;
-  padding-left: 50px;
-}
-
 .iconbox {
-  /*position: relative;*/
-}
-
-.iconcaption {
-   display: none;
-   font-size: 85%;
-   position: absolute;
-   top: -30px;
-   right: 0px;
-}
-.iconbox:hover .iconcaption {
-   display: block;
+  position: relative;
 }
 
 .iconcounter {
